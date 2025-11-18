@@ -11,5 +11,7 @@ Referência das texturas e objetos:
 Para fazer o projeto funcionar basta utilizar o comando npx vite para criar um localhost que é capaz de rodar a interface. Se necessário, instalar o pacote npm utilizando o comando npm install.
 O código está 100% comentado, comando por comando, a fim de trazer uma maior facilidade em seu entendimento. O objetivo é deixar claro cada etapa e o porquê de cada realização.
 
+O projeto conta com um vídeo explicaativo. Para abrí-lo, basta abrir o arquivo "Vídeos" que conta com o link do vídeo que foi postado no Youtube.
+
 Agradeço desde já, espero que tenha uma ótima experiência 😁
 
