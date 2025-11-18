@@ -147,9 +147,6 @@ function loadOBJcomMTL(objUrl, mtlUrl, pos = { x: 0, y: 0, z: 0 }, scale = 1) {/
 // Carregar um macaco
 loadOBJcomMTL("/assets/models/macaco.obj", '/assets/models/macaco.mtl', { x: -25, y: 1, z: -3 }, 0.03);
 
-//Carregar uma tenda
-
-
 // Cria a função GLTF
 function loadGLTF(path, pos = { x: 0, y: 0, z: 0 }, scale = 1, nome) {//função para carregar os arquivos GLTF ou GLB, com parâmetros url (path), coordenadas e a escala do objeto
   const gltfLoader = new GLTFLoader();//instancia o loader
@@ -204,7 +201,7 @@ loadGLTF("/assets/models/tent.glb", { x: 0, y: 7, z: 23 }, 0.05);
 const move = { f: false, b: false, l: false, r: false };//objeto utilizado para verificar se as teclas estão pressionadas. f = frente, b = trás, l = esquerda, r = direita. vão ficar true quando forem apertadas
 const vel = new THREE.Vector3();//vetor para armazenar a velocidade atual de movimento
 const dir = new THREE.Vector3();//vetor para armazenar a direção normalizada do movimento (aponta pra onde ir)
-const SPEED = 30;//define a velocidade maxima de movimento
+const SPEED = 15;//define a velocidade maxima de movimento
 
 document.addEventListener("keydown", (e) => {//evento para quando a tecla é pressionada. realiza o callback sempre que isso ocorre. 
   if (e.code === "KeyW") move.f = true;//seta o movimento (move) de cada uma para true se for a tecla correspondente a ser pressionada
@@ -240,8 +237,8 @@ function animate() {//função principal do loop
     dir.set(Number(move.r) - Number(move.l), 0, Number(move.f) - Number(move.b));//seta a direção que ele vai andar. converte o valor booleano do moove para 0 ou 1. se o r for true, o dir.x = 1. se o l for true, o dir.x = -1. o mesmo vale para o eixo z
     if (dir.length() > 0) dir.normalize();//se alguma tecla ou mais estiver pressionada (length > 0), ele normaliza o vetor dir para que mesmo se andar em duas direções a velocidade seja a mesma
 
-    vel.x -= vel.x * 10 * dt;//subtrai gradualmente a velocidade do x, para tornar o movimento mais natural
-    vel.z -= vel.z * 10 * dt;//subtrai gradualmente a velocidade do z, para tornar o movimento mais natural
+    vel.x -= vel.x * 3 * dt;//subtrai gradualmente a velocidade do x, para tornar o movimento mais natural
+    vel.z -= vel.z * 3 * dt;//subtrai gradualmente a velocidade do z, para tornar o movimento mais natural
 
     vel.x += dir.x * SPEED * dt;//calcula um pequeno impulso do eixo x na direção que o usuário está apertando no teclado, baseado na velocidade máxima (SPEED)
     vel.z += dir.z * SPEED * dt;//calcula um pequeno impulso do eixo z na direção que o usuário está apertando no teclado, baseado na velocidade máxima (SPEED)
