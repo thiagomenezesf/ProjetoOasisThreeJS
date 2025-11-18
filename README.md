@@ -3,5 +3,12 @@ Este é um projeto de Computação Gráfica e trata-se de uma interface interati
 
 O sistema foi projetado para web utilizando como biblioteca principal o Three.Js. Foram priorizados alguns aspectos de otimização, como redução de segmentos (faces) do solo, utilização de modelos de sombras mais leves, além de reduzir sua qualidade.
 
+Referência das texturas e objetos:
+  - Tenda: https://www.turbosquid.com/pt_br/3d-models/tent-camping-vacation-max-free/579595
+  - Objetos e Texturas de Natureza: https://kenney.nl/assets/nature-kit
+  - Macaco: https://free3d.com/3d-model/spider-monkey-v1--803509.html?dd_referrer=
+
 Para fazer o projeto funcionar basta utilizar o comando npx vite para criar um localhost que é capaz de rodar a interface. Se necessário, instalar o pacote npm utilizando o comando npm install.
-Projeto de Computação Gráfica de uma interface interativa de um Oásis, utilizando a biblioteca Three.JS
+
+Agradeço desde já, espero que tenha uma ótima experiência 😁
+
