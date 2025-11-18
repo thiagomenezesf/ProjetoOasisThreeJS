@@ -9,6 +9,7 @@ Referência das texturas e objetos:
   - Macaco: https://free3d.com/3d-model/spider-monkey-v1--803509.html?dd_referrer=
 
 Para fazer o projeto funcionar basta utilizar o comando npx vite para criar um localhost que é capaz de rodar a interface. Se necessário, instalar o pacote npm utilizando o comando npm install.
+O código está 100% comentado, comando por comando, a fim de trazer uma maior facilidade em seu entendimento. O objetivo é deixar claro cada etapa e o porquê de cada realização.
 
 Agradeço desde já, espero que tenha uma ótima experiência 😁
 
